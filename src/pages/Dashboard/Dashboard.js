@@ -1,5 +1,17 @@
-export default function Dashboard() {
+import { Link } from 'react-router-dom'
+
+
+export default function Dashboard({ stocks }) {
     return (
-        <h1>Dashboard Page</h1>
+        <div className="stock-list">
+            {stocks.map(stock => {
+                return (
+                    <Link to={stock.symbol}>
+                        {stock.name}
+                    </Link>
+                )
+            })
+            }
+        </div>
     )
 }

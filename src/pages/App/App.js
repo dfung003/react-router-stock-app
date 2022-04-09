@@ -13,7 +13,9 @@ export default function App() {
     <div className="App">
       <Nav />
       <Routes>
-        <Route path="/" element={<About />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/stocks" element={<Dashboard stocks={data} />} />
       </Routes>
     </div>
   );

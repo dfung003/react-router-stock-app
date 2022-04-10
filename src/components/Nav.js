@@ -5,13 +5,13 @@ import { Link } from 'react-router-dom';
 export default function Nav() {
     return (
         <nav className='nav'>
-            <Link to="/">
+            <Link className="nav-link" to="/">
                 <h1>iStocks</h1>
             </Link>
-            <Link to="/stocks">
+            <Link className="nav-link" to="/stocks">
                 <div>Stocks</div>
             </Link>
-            <Link to="/about">
+            <Link className="nav-link" to="/about">
                 <div>About</div>
             </Link>
         </nav>

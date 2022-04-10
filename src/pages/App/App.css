@@ -1,0 +1,22 @@
+.App {
+    text-align: center;
+    justify-content: center;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #6532cb;
+    border: 1px solid black;
+
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+.list-items {
+    list-style: none;
+}
